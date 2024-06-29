@@ -10,8 +10,8 @@
 #include <WiFiUdp.h> // Library for UDP communication
 
 // Replace with your network credentials
-const char* ssid = "TP-Link_BFF8"; // SSID of the Wi-Fi network
-const char* password = "bCf33337123Ef"; // Password of the Wi-Fi network
+const char* ssid = "your_SSID"; // SSID of the Wi-Fi network
+const char* password = "your_PASSWORD"; // Password of the Wi-Fi network
 
 // OLED display configuration
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
@@ -26,9 +26,9 @@ WiFiUDP ntpUDP; // UDP instance for NTP
 NTPClient timeClient(ntpUDP, "pool.ntp.org", utcOffsetInSeconds); // NTP client instance
 
 // Weather configuration
-String openWeatherMapApiKey = "602d57c2f646a23579b1940249e9dd5c"; // API key for OpenWeatherMap
-String city = "Maltepe"; // City name for weather data
-String countryCode = "TR"; // Country code for weather data
+String openWeatherMapApiKey = "your_OpenWeatherMap_API_key"; // API key for OpenWeatherMap
+String city = "your_city"; // City name for weather data
+String countryCode = "your_country_code"; // Country code for weather data
 String jsonBuffer; // Buffer to store JSON data
 float temp_C = 0.0; // Variable to store temperature in Celsius
 int humidity = 0; // Variable to store humidity
